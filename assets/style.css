@@ -8,8 +8,8 @@
 }
 
 
- 
-  
+
+
 
 .spl_btn {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -23,9 +23,11 @@
     0% {
         transform: scaleX(1) scaleY(1);
     }
+
     50% {
         transform: scaleX(1.1) scaleY(1.05);
     }
+
     100% {
         transform: scaleX(1) scaleY(1);
     }
@@ -52,6 +54,7 @@
 .wave:nth-child(2) {
     animation-delay: 1s;
 }
+
 .wave:nth-child(3) {
     animation-delay: 2s;
 }
@@ -62,8 +65,19 @@
         transform: scale(1);
         opacity: 0.8;
     }
+
     100% {
         transform: scale(3);
         opacity: 0;
     }
+}
+
+
+.footer {
+    background: linear-gradient(180deg, #3B3B3B -14.65%, #202020 41.32%, #202020 62.03%) !important;
+}
+
+
+footer {
+    background: linear-gradient(180deg, #3B3B3B -14.65%, #202020 41.32%, #202020 62.03%) !important;
 }
