@@ -1,0 +1,32 @@
+.background-img {
+    background-image: url(./banner-bg.png);
+    width: 1500px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+ 
+  
+
+.spl_btn {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.spl_btn:hover {
+    animation: bubble 0.5s ease-out;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scaleX(1) scaleY(1);
+    }
+    50% {
+        transform: scaleX(1.1) scaleY(1.05);
+    }
+    100% {
+        transform: scaleX(1) scaleY(1);
+    }
+}
