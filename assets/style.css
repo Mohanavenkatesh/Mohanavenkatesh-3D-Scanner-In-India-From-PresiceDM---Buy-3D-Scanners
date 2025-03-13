@@ -40,6 +40,14 @@
     animation: waveExpand 3s infinite ease-out;
 }
 
+
+@media (max-width: 640px) {
+    .wave {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 /* Create multiple waves with different delays */
 .wave:nth-child(2) {
     animation-delay: 1s;
