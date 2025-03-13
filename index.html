@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Scanner India - Precise3DM</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <script defer src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
@@ -13,67 +13,69 @@
 
 <body class="font-sans text-center">
 
-    <!-- Navbar Above -->
-    <section id="buttons" class="p-3">
-        <div class="flex flex-wrap justify-center gap-4">
-            <button class="px-4 py-2 border border-gray-300 bg-white rounded-md">Buy <i
-                    class="fas fa-chevron-down"></i></button>
-            <button class="px-4 py-2 border border-gray-300 flex items-center rounded-md"><i
-                    class="fas fa-envelope mr-2"></i> E-mail <i class="fas fa-chevron-down ml-2"></i></button>
-            <button class="px-4 py-0 border border-gray-300 flex items-center rounded-md"><i
-                    class="fas fa-phone mr-2"></i>
-                Call Now <i class="fas fa-chevron-down ml-2"></i></button>
-            <button class="px-6 py-3 bg-orange-400 text-white font-bold rounded-full ">Book Demo / Get Quote for 3D
-                Scanner</button>
-            <button class="px-6 py-2 bg-orange-400 text-white font-bold rounded-full">Get 3D Scan Service Quote</button>
-            <button class="px-6 py-2 bg-orange-400 text-white font-bold rounded-full flex items-center"><i
-                    class="fas fa-video mr-2"></i> Meet Us Live Online</button>
-            <div class="flex items-center space-x-4 text-xl mt-2">
-                <i class="fab fa-linkedin cursor-pointer"></i>
-                <i class="fab fa-whatsapp cursor-pointer"></i>
-                <i class="fab fa-facebook cursor-pointer"></i>
-                <i class="fab fa-twitter cursor-pointer"></i>
-                <i class="fab fa-youtube cursor-pointer"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- Navbar -->
-    <nav class="bg-gradient-to-r from-gray-800 to-gray-900 p-4">
-
-
-        <div class="container mx-auto flex gap-6 items-center">
-
-            <!-- Logo -->
-            <a href="#" class="text-orange-500 text-2xl font-bold flex items-center">
-                <img src="./assets/img/Precise Logos-08.png" alt="Logo" class="h-8 mr-2"></a>
-
-            <!-- Menu -->
-            <div class="hidden md:flex space-x-6 text-white text-lg">
-                <a href="#" class="hover:text-orange-400">Home</a>
-                <a href="#" class="hover:text-orange-400">3D Products</a>
-                <a href="#" class="hover:text-orange-400">3D Solutions</a>
-                <a href="#" class="hover:text-orange-400">3D Services</a>
-                <a href="#" class="hover:text-orange-400">Resources</a>
-                <a href="#" class="hover:text-orange-400">Contact Us</a>
-            </div>
-
-
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden text-white text-2xl">
-                ☰
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-gray-900 text-white p-4">
-            <a href="#" class="py-2 hover:text-orange-400">Home</a>
-            <a href="#" class="py-2 hover:text-orange-400">3D Products</a>
-            <a href="#" class="py-2 hover:text-orange-400">3D Solutions</a>
-            <a href="#" class="py-2 hover:text-orange-400">3D Services</a>
-            <a href="#" class="py-2 hover:text-orange-400">Resources</a>
-            <a href="#" class="py-2 hover:text-orange-400">Contact Us</a>
-        </div>
-    </nav>
+<!-- Navbar Above -->
+<section id="buttons" class="p-3">
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <button class="px-4 py-2 border border-gray-300 bg-white rounded-md">
+        Buy <i class="fas fa-chevron-down"></i>
+      </button>
+      <button class="px-4 py-2 border border-gray-300 flex items-center rounded-md">
+        <i class="fas fa-envelope mr-2"></i> E-mail <i class="fas fa-chevron-down ml-2"></i>
+      </button>
+      <button class="px-4 py-0 border border-gray-300 flex items-center rounded-md">
+        <i class="fas fa-phone mr-2"></i> Call Now <i class="fas fa-chevron-down ml-2"></i>
+      </button>
+      <button class="px-6 py-3 bg-orange-400 text-white font-bold rounded-full">
+        Book Demo / Get Quote for 3D Scanner
+      </button>
+      <button class="px-6 py-2 bg-orange-400 text-white font-bold rounded-full">
+        Get 3D Scan Service Quote
+      </button>
+      <button class="px-6 py-2 bg-orange-400 text-white font-bold rounded-full flex items-center">
+        <i class="fas fa-video mr-2"></i> Meet Us Live Online
+      </button>
+      <div class="flex items-center space-x-4 text-xl">
+        <i class="fab fa-linkedin cursor-pointer"></i>
+        <i class="fab fa-whatsapp cursor-pointer"></i>
+        <i class="fab fa-facebook cursor-pointer"></i>
+        <i class="fab fa-twitter cursor-pointer"></i>
+        <i class="fab fa-youtube cursor-pointer"></i>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-gray-800 to-gray-900 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center text-orange-500 text-2xl font-bold">
+        <img src="./assets/img/Precise Logos-08.png" alt="Logo" class="h-8 mr-2">
+        
+      </a>
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6 text-white text-lg">
+        <a href="#" class="hover:text-orange-400">Home</a>
+        <a href="#" class="hover:text-orange-400">3D Products</a>
+        <a href="#" class="hover:text-orange-400">3D Solutions</a>
+        <a href="#" class="hover:text-orange-400">3D Services</a>
+        <a href="#" class="hover:text-orange-400">Resources</a>
+        <a href="#" class="hover:text-orange-400">Contact Us</a>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden flex-col bg-gray-900 text-white">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">3D Products</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">3D Solutions</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">3D Services</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Resources</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact Us</a>
+    </div>
+  </nav>
 
     <!-- Hero -->
     <section class="w-full text-center background-img bg-cover bg-center">
@@ -158,7 +160,7 @@
 
     <!-- Why Consider Precise3DM for your 3D Scanner Purchase? -->
     <div class="py-10">
-        <div class="max-w-7xl mx-auto bg-white border border-gray-300 rounded-2xl p-6 ">
+        <div class="max-w-7xl mx-auto bg-white border border-orange-300 rounded-2xl p-6 ">
             <h2 class="text-center text-3xl font-semibold text-gray-900">
                 Why Consider <span class="text-[#f49834]">Precise3DM</span> for your 3D Scanner Purchase?
             </h2>
@@ -220,7 +222,7 @@
     </section>
 
     <!-- Explore Our Range of 3D Scanners -->
-    <div class="flex flex-col md:flex-row justify-center items-center mx-auto text-center">
+    <div class="flex flex-col md:flex-row justify-center items-center mx-auto text-center ">
         <!-- Tabs List -->
         <div class="md:w-1/10 p-4">
             <ul class="flex md:flex-col gap-2 tabs justify-center">
@@ -248,8 +250,9 @@
         <div class="md:w-5/6 p-4">
             <div id="tab1" class="content hidden">
                 <!-- Content for Tab 1 -->
-                <div class="flex flex-col md:flex-row items-center gap-4">
-                    <div class="flex-1">
+                <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                    <!-- Left Section: Text Content -->
+                    <div class="flex-1 flex flex-col gap-6">
                         <div class="quote-content">
                             <h2 class="text-2xl font-semibold mb-2">Fill out the Form</h2>
                             <p class="mb-4">
@@ -257,21 +260,22 @@
                                 including component size, application, and budget.
                             </p>
                             <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php"
-                                class="btn bg-orange-500 text-white px-4 py-2 rounded spl_btn">
+                                class="btn bg-orange-500 text-white px-6 py-3 rounded-md font-medium">
                                 Get Rapid Quote
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list1.png" alt="" class="rounded-lg" />
-                            <!-- Decorative spans -->
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_one.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="tab2" class="content hidden">
@@ -290,15 +294,17 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list2.png" alt="" class="rounded-lg" />
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_two.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="tab3" class="content">
@@ -317,15 +323,17 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list3.png" alt="" class="rounded-lg" />
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_three.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="tab4" class="content hidden">
@@ -345,15 +353,17 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list4.png" alt="" class="rounded-lg" />
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_four.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="tab5" class="content hidden">
@@ -372,15 +382,17 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list5.png" alt="" class="rounded-lg" />
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_five.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="tab6" class="content hidden">
@@ -399,15 +411,17 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.precise3dm.com/Book-demo-get-quote-for-3D-scanner.php" class="flex-shrink-0">
-                        <div class="quote-img relative">
-                            <img src="assets/images/new-home/list6.png" alt="" class="rounded-lg" />
-                            <span style="--i:0" class="absolute"></span>
-                            <span style="--i:1" class="absolute"></span>
-                            <span style="--i:2" class="absolute"></span>
-                            <span style="--i:3" class="absolute"></span>
+                    <!-- Right Section: Infinite Wave Animation -->
+                    <div class="relative flex justify-center items-center w-48 h-48">
+                        <div class="absolute w-full h-full">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
                         </div>
-                    </a>
+                        <div class="ui-overlay relative">
+                            <img src="./assets/img/foranimation_six.png" alt="UI Mockup" class="w-full">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,7 +438,7 @@
     </div>
 
     <!-- 3D Scanner By Technology -->
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto">
+    <div class="bg-orange-50 p-20 rounded-lg shadow-md max-w-7xl mx-auto border border-orange-300 my-10">
         <h2 class="text-center text-xl font-semibold mb-6 bg-white inline-block px-4 py-2 rounded-lg shadow-md">
             3D Scanner By Technology
         </h2>
@@ -485,7 +499,7 @@
     </div>
 
     <!--Structured Light 3D Scanners  -->
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto ">
+    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Text Section -->
             <div class="text-center">
@@ -535,7 +549,7 @@
     </div>
 
     <!-- Handheld Colour 3D -->
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto">
+    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Product Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -587,7 +601,7 @@
     <!-- Palm-sized and compact
 metrology-grade 3D Scanner  -->
 
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto">
+    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Text Section -->
             <div>
@@ -625,7 +639,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- Industrial Handheld 3D Scanners (Metrology Grade) -->
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto">
+    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Product Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -677,7 +691,7 @@ metrology-grade 3D Scanner  -->
 
     <!-- Trinocular Technology Triple Camera - Stickerless Handheld Laser 3D Scanner -->
     <div>
-        <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto">
+        <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl mx-auto p-20 border border-orange-300 my-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <!-- Text Section -->
                 <div>
@@ -726,7 +740,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- Tracker-based 3D Scanner with a wireless probe -->
-    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl w-full mx-auto">
+    <div class="bg-orange-50 p-8 rounded-lg shadow-md max-w-7xl w-full mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-center md:text-left">
             <!-- Product Image Section -->
             <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
@@ -768,7 +782,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- 3D Scanner By Application -->
-    <div class="bg-white  rounded-lg p-6 max-w-7xl mx-auto bg-orange-100">
+    <div class="bg-[#FFF8F2]  rounded-lg p-6 max-w-7xl mx-auto bg-orange-100 p-20 border border-orange-300 my-10">
         <h2 class="text-center text-2xl font-semibold mb-6  py-2 rounded-lg">
             3D Scanner By Application
         </h2>
@@ -815,7 +829,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- 3D Scanners for Reverse Engineering -->
-    <div class="bg-white shadow-lg rounded-lg p-6 max-w-7xl mx-auto border border-gray-200">
+    <div class="bg-[#FFF8F2] shadow-lg rounded-lg p-6 max-w-7xl mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Left Section -->
             <div class="flex justify-center justify-between flex-col">
@@ -869,7 +883,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- 3D Scanners for Quality Control -->
-    <div class="bg-white p-8 rounded-2xl shadow-lg max-w-7xl w-full mx-auto">
+    <div class="bg-[#FFF8F2] p-8 rounded-2xl shadow-lg max-w-7xl w-full mx-auto p-20 border border-orange-300 my-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Left Section -->
             <div class="grid grid-cols-2 gap-4">
@@ -932,7 +946,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
 
-    <div class="max-w-7xl bg-white p-8 rounded-lg shadow-md border border-orange-100 mx-auto">
+    <div class="max-w-7xl  p-8 bg-[#FFF8F2] rounded-lg shadow-md border border-orange-100 mx-auto">
         <div class="grid md:grid-cols-2 gap-8 items-center">
             <div>
                 <h2 class="text-3xl font-bold text-gray-800">3D Scanners for 3D Printing</h2>
@@ -988,44 +1002,37 @@ metrology-grade 3D Scanner  -->
         </div>
     </div>
 
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md mx-auto">
-        <div class="grid grid-cols-2 gap-6">
+    <!-- 3D Scanners for Healthcare -->
+    <div class="bg-[#FFF8F2] rounded-lg max-w-7xl shadow-md mx-auto border border-orange-300 my-10 p-8 md:p-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Image Section -->
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="./assets/img/3D Scanners for Healthcare (Human Body Scanning)/one.png" alt="Einscan H2"
-                        class="h-40 object-contain">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einscan
-                        H2</button>
+                    <img src="./assets/img/3D Scanners for Healthcare (Human Body Scanning)/one.png" alt="Einscan H2" class="h-40 object-contain">
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einscan H2</button>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="./assets/img/3D Scanners for Healthcare (Human Body Scanning)/two.png" alt="Einstar"
-                        class="h-40 object-contain">
-                    <button
-                        class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einstar</button>
+                    <img src="./assets/img/3D Scanners for Healthcare (Human Body Scanning)/two.png" alt="Einstar" class="h-40 object-contain">
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einstar</button>
                 </div>
             </div>
-
+    
             <!-- Text Section -->
             <div>
                 <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Healthcare</h2>
                 <h3 class="text-2xl font-bold text-gray-700 mt-1">(Human Body Scanning)</h3>
                 <p class="text-gray-600 mt-4">
                     Precise3DM offers specialized 3D Scanners for healthcare applications, including human body scanning
-                    for
-                    medical device design and other medical applications. Our scanners capture lifelike textures and
-                    precise
-                    measurements, making them perfect for orthotics, prosthetics, and body modeling.
+                    for medical device design and other medical applications. Our scanners capture lifelike textures and
+                    precise measurements, making them perfect for orthotics, prosthetics, and body modeling.
                 </p>
                 <p class="text-gray-600 mt-2">
                     Designed for efficiency and comfort, they enable non-invasive scanning, ideal for patient use. With
-                    powerful
-                    software, you can seamlessly process scans for medical modeling, research, or healthcare
+                    powerful software, you can seamlessly process scans for medical modeling, research, or healthcare
                     customization.
                 </p>
-                <div class="mt-6 flex gap-4">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote & Book
-                        Demo</button>
+                <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote &amp; Book Demo</button>
                     <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
                 </div>
             </div>
@@ -1033,129 +1040,116 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- 3D Scanners for Statues and Cultural Heritage -->
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md mx-auto">
-        <div class="grid grid-cols-2 gap-6">
-            <!-- Text Section -->
-            <div>
-                <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Statues and Cultural Heritage</h2>
-                <p class="text-gray-600 mt-4">
-                    Precise3DM offers 3D scanners to scan statues and historical and art applications to preserve the
-                    past. These scanners are designed to accurately capture the smallest features for greater detail of
-                    historical sites, sculptures, and artefacts.
-                </p>
-                <p class="text-gray-600 mt-2">
-                    Our solutions offer accurate and full-color 3D data for digital preservation and restoration,
-                    whether you're restoring architectural landmarks or 3D scanning museum exhibits.
-                </p>
-                <p class="text-gray-600 mt-2">
-                    With the help of built-in and user-friendly 3D scanning software, you can easily edit, evaluate, and
-                    distribute your scans. Let us use our cutting-edge scanning technology to assist you in protecting
-                    cultural treasures.
-                </p>
-                <div class="mt-6 flex gap-4">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote & Book
-                        Demo</button>
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
-                </div>
+    <div class="bg-[#FFF8F2] rounded-lg max-w-7xl shadow-md mx-auto border border-orange-300 my-10 p-8 md:p-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Text Section -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Statues and Cultural Heritage</h2>
+            <p class="text-gray-600 mt-4">
+              Precise3DM offers 3D scanners to scan statues and historical and art applications to preserve the past. These scanners are designed to accurately capture the smallest features for greater detail of historical sites, sculptures, and artefacts.
+            </p>
+            <p class="text-gray-600 mt-2">
+              Our solutions offer accurate and full-color 3D data for digital preservation and restoration, whether you're restoring architectural landmarks or 3D scanning museum exhibits.
+            </p>
+            <p class="text-gray-600 mt-2">
+              With the help of built-in and user-friendly 3D scanning software, you can easily edit, evaluate, and distribute your scans. Let us use our cutting-edge scanning technology to assist you in protecting cultural treasures.
+            </p>
+            <div class="mt-6 flex gap-4">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote &amp; Book Demo</button>
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
             </div>
-
-            <!-- Image Section -->
-            <div class="grid grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="./assets/img/3D Scanners for Statues and Cultural Heritage/one.png" alt="Einscan H2"
-                        class="h-40 object-contain">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md">Einscan H2</button>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                    <img src="./assets/img/3D Scanners for Statues and Cultural Heritage/two.png" alt="Transcan C"
-                        class="h-40 object-contain">
-                    <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md">Transcan C</button>
-                </div>
+          </div>
+      
+          <!-- Image Section -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+              <img src="./assets/img/3D Scanners for Statues and Cultural Heritage/one.png" alt="Einscan H2" class="h-40 object-contain">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md">Einscan H2</button>
             </div>
+            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
+              <img src="./assets/img/3D Scanners for Statues and Cultural Heritage/two.png" alt="Transcan C" class="h-40 object-contain">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md">Transcan C</button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- 3D Scanners for Education -->
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex gap-8 justify-center mx-auto">
-        <!-- Image Section -->
-        <div class="flex gap-6">
+    <div class="bg-[#FFF8F2] rounded-lg max-w-7xl shadow-md mx-auto border border-orange-300 my-10 p-8 md:p-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <!-- Image Section -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                <img src="./assets/img/3D Scanners for Education/one.png" alt="Einscan H2" class="h-40 object-contain">
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einscan H2</button>
+              <img src="./assets/img/3D Scanners for Education/one.png" alt="Einscan H2" class="h-40 object-contain">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einscan H2</button>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-                <img src="./assets/img/3D Scanners for Education/two.png" alt="Einstar" class="h-40 object-contain">
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einstar</button>
+              <img src="./assets/img/3D Scanners for Education/two.png" alt="Einstar" class="h-40 object-contain">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Einstar</button>
             </div>
-        </div>
-
-        <!-- Text Section -->
-        <div>
+          </div>
+          
+          <!-- Text Section -->
+          <div>
             <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Education</h2>
             <p class="text-gray-600 mt-4">
-                Are you an educational institute or researcher looking for the perfect 3D scanner for your students or
-                academic projects? Precise3DM offers a range of 3D scanners specifically designed for educational
-                purposes.
+              Are you an educational institute or researcher looking for the perfect 3D scanner for your students or academic projects? Precise3DM offers a range of 3D scanners specifically designed for educational purposes.
             </p>
             <p class="text-gray-600 mt-2">
-                These scanners provide high-resolution, high-precision, and color-accurate data and are excellent tools
-                for teaching the fundamentals of 3D scanning and post-processing, reverse engineering, inspection, and
-                research applications.
+              These scanners provide high-resolution, high-precision, and color-accurate data and are excellent tools for teaching the fundamentals of 3D scanning and post-processing, reverse engineering, inspection, and research applications.
             </p>
             <p class="text-gray-600 mt-2">
-                Our educational 3D scanners empower students to gain hands-on experience and deepen their understanding
-                of advanced technologies.
+              Our educational 3D scanners empower students to gain hands-on experience and deepen their understanding of advanced technologies.
             </p>
-            <div class="mt-6 flex gap-4">
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote & Book
-                    Demo</button>
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote &amp; Book Demo</button>
+              <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
             </div>
+          </div>
+          
         </div>
-    </div>
+      </div>
 
     <!-- 3D Scanners for Jewellery Design and Manufacturing -->
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex gap-8 mx-auto">
+    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex flex-col md:flex-row gap-8 mx-auto">
         <!-- Text Section -->
         <div class="max-w-md">
-            <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Jewellery Design and Manufacturing</h2>
-            <p class="text-gray-600 mt-4">
-                Precision and attention to detail are essential in the jewellery product development, design, and
-                production of jewellery.
-                To capture the fine details and shape of jewellery in high-quality manufacturing, using the appropriate
-                3D scanner is crucial.
-            </p>
-            <p class="text-gray-600 mt-2">
-                We at Precise3DM supply closed-frame 3D scanners from Thunk 3D, specially designed to meet the
-                requirements of jewellery designers.
-                These scanners provide remarkable precision, making it simple and quick to capture minute details that
-                conventional techniques may miss.
-            </p>
-            <p class="text-gray-600 mt-2">
-                Our 3D scanners enhance your workflow by guaranteeing accuracy and reducing the time required for manual
-                modifications,
-                whether you're making prototypes, custom jewellery, or modifying existing designs.
-            </p>
-            <div class="mt-6 flex gap-4">
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Get Quote & Book
-                    Demo</button>
-                <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">Know More</button>
-            </div>
+          <h2 class="text-3xl font-bold text-gray-800">3D Scanners for Jewellery Design and Manufacturing</h2>
+          <p class="text-gray-600 mt-4">
+            Precision and attention to detail are essential in the jewellery product development, design, and production of jewellery.
+            To capture the fine details and shape of jewellery in high-quality manufacturing, using the appropriate 3D scanner is crucial.
+          </p>
+          <p class="text-gray-600 mt-2">
+            We at Precise3DM supply closed-frame 3D scanners from Thunk 3D, specially designed to meet the requirements of jewellery designers.
+            These scanners provide remarkable precision, making it simple and quick to capture minute details that conventional techniques may miss.
+          </p>
+          <p class="text-gray-600 mt-2">
+            Our 3D scanners enhance your workflow by guaranteeing accuracy and reducing the time required for manual modifications,
+            whether you're making prototypes, custom jewellery, or modifying existing designs.
+          </p>
+          <div class="mt-6 flex gap-4">
+            <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">
+              Get Quote &amp; Book Demo
+            </button>
+            <button class="bg-orange-500 text-white py-2 px-4 rounded-lg shadow-md spl_btn">
+              Know More
+            </button>
+          </div>
         </div>
-
+      
         <!-- Image Section -->
         <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
-            <img src="./assets/img/3D Scanners for Jewellery Design and Manufacturing/one.png"
-                alt="Closed Frame Jewellery 3D Scanner" class="h-52 object-contain">
-            <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">Closed Frame Jewellery
-                3D
-                Scanner</button>
+          <img src="./assets/img/3D Scanners for Jewellery Design and Manufacturing/one.png" alt="Closed Frame Jewellery 3D Scanner" class="h-52 object-contain">
+          <button class="bg-orange-500 text-white py-2 px-4 rounded-lg mt-4 shadow-md spl_btn">
+            Closed Frame Jewellery 3D Scanner
+          </button>
         </div>
-    </div>
+      </div>
 
 
     <!-- 3D Scanner for Aerospace -->
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex flex-wrap gap-8 mx-auto">
+    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex flex-wrap gap-8 mx-auto p-20 border border-orange-300 my-10">
         <!-- Image Grid Section -->
         <div class="grid grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center">
@@ -1223,7 +1217,7 @@ metrology-grade 3D Scanner  -->
 
 
     <!-- Lowcost 3D scanner -->
-    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex flex-wrap gap-8 mx-auto">
+    <div class="bg-[#FFF8F2] p-8 rounded-lg max-w-7xl shadow-md flex justify-between flex-wrap gap-8 mx-auto p-20 border border-orange-300 my-10">
         <!-- Text Section -->
         <div class="max-w-lg">
             <h2 class="text-3xl font-bold text-gray-800">Lowcost 3D scanner</h2>
@@ -1263,7 +1257,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- Blogs & Resources -->
-    <div class="max-w-7xl w-full mx-auto py-10">
+    <div class="max-w-7xl w-full bg-[#FFF8F2] rounded mx-auto py-10 p-20 border border-orange-300 my-10">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Blogs & Resources</h2>
         <!-- Blog Container -->
         <div class="relative flex items-center gap-4 ">
@@ -1308,7 +1302,7 @@ metrology-grade 3D Scanner  -->
     </div>
 
     <!-- FREQUENTLY ASKED QUESTIONS -->
-    <div class="max-w-7xl w-full mx-auto py-10">
+    <div class="max-w-7xl w-full mx-auto py-10 ">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
             <span class="text-orange-500">FREQUENTLY</span> ASKED QUESTIONS
         </h2>
@@ -1470,6 +1464,10 @@ metrology-grade 3D Scanner  -->
             </a>
         </div>
     </footer>
+
+
+
+    
 
     <a href="https://wa.me/your-number" target="_blank" class="hidden md:fixed bottom-4 right-4  ">
         <img src="./assets/img/whatsapp.png" alt="WhatsApp" class="w-16">
