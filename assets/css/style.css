@@ -1,3 +1,9 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+
+
+
 .bg-img {
     position: relative;
     width: 100%;
@@ -75,7 +81,7 @@
 }
 
 
-.positon-img-1{
+.positon-img-1 {
 
     position: absolute;
     top: 50%;
@@ -136,5 +142,11 @@
 .orange-btn {
     background: linear-gradient(0deg, #FF931E, #FF931E),
         radial-gradient(63.11% 63.11% at 31.97% 19.67%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+}
+
+.external_shadow {
+    -webkit-box-shadow: 3px 3px 10px 3px #ffc6b1;
+    -moz-box-shadow: 3px 3px 10px 3px #ffc6b1;
+    box-shadow: 3px 3px 10px 3px #ffc6b1;
 }
 
